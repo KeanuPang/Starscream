@@ -40,6 +40,9 @@ public enum ConnectionState {
     
     //the connection receive data
     case receive(Data)
+    
+    /// Remote peer has closed the network connection.
+    case peerClosed
 }
 
 public protocol TransportEventClient: AnyObject {
